@@ -25,7 +25,7 @@ namespace parcerHTML_bastchange
             DataSet ds = new DataSet();
             ds.Tables.Add("my");
 
-            string[] col = { "Обменник", "Резервы", "Курсов", "Статус", "BL", "Отзывы" };
+            string[] col = { "Обменник", "Резервы", "Курсов", "Статус" };
 
 
             foreach (string nameCol in col)
@@ -50,7 +50,7 @@ namespace parcerHTML_bastchange
                 row = match.Groups[1].Value + " | "
                                       + match.Groups[2].Value + " | "
                                       + match.Groups[3].Value + " | "
-                                      + match.Groups[4].Value + " | ";
+                                      + match.Groups[4].Value ;
                                      
 
                 rvalue = row.Split(new Char[] { '|' });
@@ -63,8 +63,7 @@ namespace parcerHTML_bastchange
                 rvalue = null;
             }
 
-            dataGridView1.Columns[4].Visible=false;
-            dataGridView1.Columns[5].Visible = false; 
+           
 
   
 
@@ -276,9 +275,87 @@ namespace parcerHTML_bastchange
                 row = null;
                 rvalue = null;
             }
-            dataGridView1.Columns[4].Visible = false;
-            dataGridView1.Columns[5].Visible = false; 
+            
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            {
+
+
+                WebClient w = new WebClient();
+              string a = comboBox1.SelectedItem.ToString();
+              string b = comboBox2.SelectedItem.ToString(); 
+                string page = w.DownloadString("http://www.bestchange.ru/"+ a +"-to-"+ b +".html" );
+
+                DataSet ds = new DataSet();
+                ds.Tables.Add("my");
+
+                string[] col = { "Обменник", "Отдаете", "Получаете", "Резерв", "Отзывы" };
+
+
+                foreach (string nameCol in col)
+                {
+                    ds.Tables[0].Columns.Add(nameCol);
+
+                }
+
+
+
+                string srcData = "<div class=\"ca\">(.*?)</div></div></div></td>"
+                            + "<td class=\"bi\">(.*?)<small>(.*?)</small></td>\n"
+                            + "<td class=\"bi\">(.*?)<small>(.*?)</small></td>\n"
+                            + "<td class=\"ar arp\" (.*?)>(.*?)</td>\n"
+                            + "(.*?)<td class=\"rwl\">(.*?)</td><td class=\"del\">(.*?)</td>"
+                            + "<td class=\"rwr pos\">(.*?)</td>";
+
+                string row = null;
+                string[] rvalue = null;
+                foreach (Match match in Regex.Matches(page, srcData))
+                {
+
+                    row = match.Groups[1].Value + " | "
+                                         + match.Groups[2].Value
+                                         + match.Groups[3].Value + " | "
+                                         + match.Groups[4].Value
+                                         + match.Groups[5].Value + " | "
+                                         + match.Groups[7].Value + " | "
+                                         + match.Groups[9].Value
+                                         + match.Groups[10].Value
+                                         + match.Groups[11].Value;
+
+                    rvalue = row.Split(new Char[] { '|' });
+
+                    ds.Tables[0].Rows.Add(rvalue);
+
+                    dataGridView1.DataSource = ds.Tables[0];
+
+                    row = null;
+                    rvalue = null;
+                }
+
+
+
+
+
+            }
+        }
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
         
             
         }

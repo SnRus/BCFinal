@@ -79,5 +79,15 @@ namespace parcerHTML_bastchange.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap w512h5121347464996Search {
+            get {
+                object obj = ResourceManager.GetObject("w512h5121347464996Search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
