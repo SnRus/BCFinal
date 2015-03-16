@@ -19,20 +19,8 @@ namespace parcerHTML_bastchange
         public Form1()
         {
             InitializeComponent();
-
-            
-  
-
         }
 
-
-        
-
-       
-        private void button3_Click(object sender, EventArgs e)
-        {
-             
-        } 
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -49,21 +37,11 @@ namespace parcerHTML_bastchange
                     
 
                 System.Diagnostics.Process.Start(b);
-
-            
-              
-               
-                
-  
-              
-               
-            }
+             }
             
         }
 
-     
-
-        private void Form1_Load(object sender, EventArgs e)
+      private void Form1_Load(object sender, EventArgs e)
         {
             
         }
@@ -107,19 +85,40 @@ namespace parcerHTML_bastchange
                                       + match.Groups[5].Value + " | "
                                       + match.Groups[6].Value + " | "
                                      + match.Groups[1].Value  ;
+               
 
 
                 rvalue = row.Split(new Char[] { '|' });
-
+                
                 ds.Tables[0].Rows.Add(rvalue);
-
+               
+                
                 dataGridView1.DataSource = ds.Tables[0];
-
+                
+               
                 row = null;
                 rvalue = null;
+                
+               
+                    
                 dataGridView1.Columns[4].Visible = false;
             }
-            
+            string s = " &ndash;&nbsp; ";
+            for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
+            {
+                
+                for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                {
+
+                    if (s == dataGridView1[j, i].Value.ToString())
+                    {
+                        dataGridView1[j, i].Value = "Недоступно"; 
+                 
+                    }
+                    
+                }
+               
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -132,22 +131,28 @@ namespace parcerHTML_bastchange
         private void button24_Click(object sender, EventArgs e)
         {
             {
-                InitializeComponent();
-            
 
+                
+                
                 WebClient w = new WebClient();
               string a = comboBox1.SelectedItem.ToString();
               string b = comboBox2.SelectedItem.ToString(); 
                 string page = w.DownloadString("http://www.bestchange.ru/"+ a +"-to-"+ b +".html" );
-
+                
                 DataSet ds = new DataSet();
+               
                 ds.Tables.Add("my");
+                dataGridView1.Columns.Clear();
+                
+                
+               
 
                 string[] col = { "Обменник", "Отдаете", "Получаете", "Резерв", "Web" };
 
 
                 foreach (string nameCol in col)
                 {
+                   
                     ds.Tables[0].Columns.Add(nameCol);
 
                 }
@@ -160,6 +165,7 @@ namespace parcerHTML_bastchange
    + "<td class=\"bi\">(.*?)<small>(.*?)</small></td>\n"
    + "<td class=\"ar arp\" (.*?)>(.*?)</td>\n"
    + "<td class=\"rw\" (.*?)<a href=\"(.*?)\" class=";
+                
 
                 string row = null;
                 string[] rvalue = null;
@@ -173,31 +179,46 @@ namespace parcerHTML_bastchange
   + match.Groups[7].Value + " | "
   + match.Groups[9].Value + " | "
   + match.Groups[1].Value;
-
+                    
                     rvalue = row.Split(new Char[] { '|' });
-
+                    
                     ds.Tables[0].Rows.Add(rvalue);
-
+                    
                     dataGridView1.DataSource = ds.Tables[0];
-
+                    
                     row = null;
                     rvalue = null;
+                    
+                    
                     dataGridView1.Columns[4].Visible = false;
                 }
 
 
+                try { string s = dataGridView1.Rows[0].Cells[0].Value.ToString(); }
 
+                catch
+                {
+                    MessageBox.Show("Выбранный курс обмена недоступен или не существует");
+                }
 
 
             }
         }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Massage NMessage = new Massage();
+            NMessage.Show();
 
         }
 
