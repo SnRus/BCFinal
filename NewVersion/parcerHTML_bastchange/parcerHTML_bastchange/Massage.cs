@@ -27,7 +27,7 @@ namespace parcerHTML_bastchange
 
         private void SendMsg_Click(object sender, EventArgs e)
         {
-            if (FromMail.Text == String.Empty || SubjectMail.Text == String.Empty || BodyMail.Text == String.Empty)
+            if (FromMail.Text.Trim() == String.Empty || SubjectMail.Text.Trim() == String.Empty || BodyMail.Text.Trim() == String.Empty)
             {
                 MessageBox.Show("Пожалуйста введите все поля");
             }
@@ -49,7 +49,7 @@ namespace parcerHTML_bastchange
                     MessageBox.Show("Ваше сообщение отправлено, спасибо за ваше обращение");
 
                 }
-                catch { MessageBox.Show("Пожалуйста, выберите один из предложенных вариантов почтовых адресов"); }
+                catch { MessageBox.Show("Что-то пошло не так:( Проверте коректность введеных вами данных, если при повторном вводе проблема не решена - обратитесь к системному администратору "); }
             }
         }
     }

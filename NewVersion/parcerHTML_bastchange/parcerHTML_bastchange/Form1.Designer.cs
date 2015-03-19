@@ -41,10 +41,11 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.HelpBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).BeginInit();
@@ -110,9 +111,9 @@
             this.button2.BackColor = System.Drawing.Color.OliveDrab;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(204, 10);
+            this.button2.Location = new System.Drawing.Point(162, 10);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 29);
+            this.button2.Size = new System.Drawing.Size(186, 29);
             this.button2.TabIndex = 30;
             this.button2.Text = "Показать все обменники";
             this.button2.UseVisualStyleBackColor = false;
@@ -187,12 +188,26 @@
             this.label2.TabIndex = 35;
             this.label2.Text = "НА";
             // 
+            // HelpBtn
+            // 
+            this.HelpBtn.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.FAQ;
+            this.HelpBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HelpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.HelpBtn.Location = new System.Drawing.Point(354, 10);
+            this.HelpBtn.Name = "HelpBtn";
+            this.HelpBtn.Size = new System.Drawing.Size(36, 29);
+            this.HelpBtn.TabIndex = 37;
+            this.HelpBtn.Tag = "";
+            this.toolTip1.SetToolTip(this.HelpBtn, "Отправить письмо в службу поддрежки");
+            this.HelpBtn.UseVisualStyleBackColor = true;
+            this.HelpBtn.Click += new System.EventHandler(this.HelpBtn_Click);
+            // 
             // button1
             // 
             this.button1.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.email;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(159, 10);
+            this.button1.Location = new System.Drawing.Point(396, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 29);
             this.button1.TabIndex = 36;
@@ -238,6 +253,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(447, 554);
+            this.Controls.Add(this.HelpBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -280,6 +296,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button HelpBtn;
     }
 }
 

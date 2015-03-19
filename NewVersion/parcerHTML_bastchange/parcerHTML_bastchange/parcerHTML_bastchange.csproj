@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BCFinderHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCFinderHelp.Designer.cs">
+      <DependentUpon>BCFinderHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BCFinderHelp.resx">
+      <DependentUpon>BCFinderHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +123,13 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="PaperMoney.ico" />
+    <None Include="Resources\FAQ.png" />
+    <None Include="Resources\Снимок.JPG" />
+    <None Include="Resources\Сниcмок.JPG" />
+    <None Include="Resources\Show.JPG" />
+    <None Include="Resources\Exch.JPG" />
+    <None Include="Resources\ShowBtn.JPG" />
+    <None Include="Resources\Message.JPG" />
     <Content Include="web V2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

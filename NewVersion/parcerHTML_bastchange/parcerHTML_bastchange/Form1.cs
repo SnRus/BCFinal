@@ -222,6 +222,12 @@ namespace parcerHTML_bastchange
 
         }
 
+        private void HelpBtn_Click(object sender, EventArgs e)
+        {
+            BCFinderHelp NewBCFinderHelp = new BCFinderHelp();
+            NewBCFinderHelp.Show();
+        }
+
        
         
             

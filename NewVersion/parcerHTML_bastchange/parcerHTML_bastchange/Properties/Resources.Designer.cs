@@ -93,6 +93,36 @@ namespace parcerHTML_bastchange.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Exch {
+            get {
+                object obj = ResourceManager.GetObject("Exch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FAQ {
+            get {
+                object obj = ResourceManager.GetObject("FAQ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Message {
+            get {
+                object obj = ResourceManager.GetObject("Message", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap messages01 {
             get {
                 object obj = ResourceManager.GetObject("messages01", resourceCulture);
@@ -113,6 +143,26 @@ namespace parcerHTML_bastchange.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Show {
+            get {
+                object obj = ResourceManager.GetObject("Show", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ShowBtn {
+            get {
+                object obj = ResourceManager.GetObject("ShowBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Technical_Support {
             get {
                 object obj = ResourceManager.GetObject("Technical-Support", resourceCulture);
@@ -126,6 +176,26 @@ namespace parcerHTML_bastchange.Properties {
         internal static System.Drawing.Bitmap w512h5121347464996Search {
             get {
                 object obj = ResourceManager.GetObject("w512h5121347464996Search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Сниcмок {
+            get {
+                object obj = ResourceManager.GetObject("Сниcмок", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Снимок {
+            get {
+                object obj = ResourceManager.GetObject("Снимок", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
