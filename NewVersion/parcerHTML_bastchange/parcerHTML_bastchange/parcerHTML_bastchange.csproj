@@ -134,6 +134,8 @@
     <None Include="Resources\Снимок1.JPG" />
     <None Include="Resources\support-loading.gif" />
     <None Include="Resources\support-loading1.gif" />
+    <None Include="Resources\Settings %281%29.png" />
+    <None Include="Resources\settings %282%29.png" />
     <Content Include="web V2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
