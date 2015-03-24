@@ -43,7 +43,7 @@ namespace parcerHTML_bastchange
 
       private void Form1_Load(object sender, EventArgs e)
         {
-            
+           
             cwmz.Checked = Properties.Settings.Default.cwmz ;
             cyandex.Checked = Properties.Settings.Default.cyandex  ;
             cwmr.Checked = Properties.Settings.Default.cwmr  ;
@@ -299,8 +299,10 @@ namespace parcerHTML_bastchange
 
         private void button24_Click(object sender, EventArgs e)
         {
+
             try
             {
+                
                 WhatToBtn.Text = null;
                 WhatFromBtn.Text = null;
                 {
@@ -335,8 +337,24 @@ namespace parcerHTML_bastchange
        + "<td class=\"bi\">(.*?)<small>(.*?)</small></td>\n"
        + "<td class=\"ar arp\" (.*?)>(.*?)</td>\n"
        + "<td class=\"rw\" (.*?)<a href=\"(.*?)\" class=";
+                    string timepattern = "id=\"updatetime\">(.*)</dd>";
+                    string time = null;
+                     foreach (Match match in Regex.Matches(page, timepattern))
+                    {
 
+                        time = match.Groups[1].Value;
+                        timeLbValue.Text = time;
+                        time = null;
+                    }
+                     string exchangepattern = "<dd title=\"обменников/обменных сайтов\">(.*?)</dd>";
+                     string exchange = null;
+                     foreach (Match match in Regex.Matches(page, exchangepattern))
+                     {
 
+                         exchange = match.Groups[1].Value;
+                         exchangeValue.Text = exchange;
+                         exchange = null;
+                     }
                     string row = null;
                     string[] rvalue = null;
                     foreach (Match match in Regex.Matches(page, srcData))
@@ -429,10 +447,27 @@ namespace parcerHTML_bastchange
                 ds.Tables.Add("my");
                 dataGridView1.Columns.Clear();
 
+                string timepattern = "id=\"updatetime\">(.*)</dd>";
+                string time = null;
+                foreach (Match match in Regex.Matches(page, timepattern))
+                {
+
+                    time = match.Groups[1].Value;
+                    timeLbValue.Text = time;
+                    time = null;
+                }
+                string exchangepattern = "<dd title=\"обменников/обменных сайтов\">(.*?)</dd>";
+                string exchange = null;
+                foreach (Match match in Regex.Matches(page, exchangepattern))
+                {
+
+                    exchange = match.Groups[1].Value;
+                    exchangeValue.Text = exchange;
+                    exchange = null;
+                }
 
 
-
-                string[] col = { "Обменник", "Отдаете", "Отдаете.", "Получаете", "Резерв", "Web" };
+                string[] col = { "Обменник", "Отдаете", "Отдаете ", "Получаете", "Резерв", "Web" };
 
 
                 foreach (string nameCol in col)
@@ -535,7 +570,7 @@ namespace parcerHTML_bastchange
 
 
 
-                    string[] col = { "Обменник", "Отдаете", "Отдаете.", "Получаете", "Резерв", "Web" };
+                    string[] col = { "Обменник", "Отдаете", "Отдаете ", "Получаете", "Резерв", "Web" };
 
 
                     foreach (string nameCol in col)
@@ -544,7 +579,24 @@ namespace parcerHTML_bastchange
                         ds.Tables[0].Columns.Add(nameCol);
 
                     }
+                    string timepattern = "id=\"updatetime\">(.*)</dd>";
+                    string time = null;
+                    foreach (Match match in Regex.Matches(page, timepattern))
+                    {
 
+                        time = match.Groups[1].Value;
+                        timeLbValue.Text = time;
+                        time = null;
+                    }
+                    string exchangepattern = "<dd title=\"обменников/обменных сайтов\">(.*?)</dd>";
+                    string exchange = null;
+                    foreach (Match match in Regex.Matches(page, exchangepattern))
+                    {
+
+                        exchange = match.Groups[1].Value;
+                        exchangeValue.Text = exchange;
+                        exchange = null;
+                    }
 
 
                     string srcData = "<td class=\"bj\"><div class=\"pa\"><a rel=\"nofollow\" target=\"_blank\" href=\"(.*?)\" (.*?)"
