@@ -27,9 +27,9 @@ namespace parcerHTML_bastchange
 
         private void SendMsg_Click(object sender, EventArgs e)
         {
-            if (FromMail.Text.Trim() == String.Empty || SubjectMail.Text.Trim() == String.Empty || BodyMail.Text.Trim() == String.Empty)
+            if ( BodyMail.Text.Trim() == String.Empty)
             {
-                MessageBox.Show("Пожалуйста введите все поля");
+                MessageBox.Show("Пожалуйста введите ваше сообщение");
             }
             else
             {

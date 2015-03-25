@@ -38,13 +38,14 @@
             this.SendMsg = new System.Windows.Forms.Button();
             this.TypeOfMail = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 204);
+            this.label1.Location = new System.Drawing.Point(7, 221);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 0;
@@ -62,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 283);
+            this.label3.Location = new System.Drawing.Point(7, 300);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 2;
@@ -70,7 +71,7 @@
             // 
             // BodyMail
             // 
-            this.BodyMail.Location = new System.Drawing.Point(10, 299);
+            this.BodyMail.Location = new System.Drawing.Point(10, 316);
             this.BodyMail.Multiline = true;
             this.BodyMail.Name = "BodyMail";
             this.BodyMail.Size = new System.Drawing.Size(268, 154);
@@ -78,14 +79,14 @@
             // 
             // SubjectMail
             // 
-            this.SubjectMail.Location = new System.Drawing.Point(12, 260);
+            this.SubjectMail.Location = new System.Drawing.Point(10, 277);
             this.SubjectMail.Name = "SubjectMail";
             this.SubjectMail.Size = new System.Drawing.Size(266, 20);
             this.SubjectMail.TabIndex = 4;
             // 
             // FromMail
             // 
-            this.FromMail.Location = new System.Drawing.Point(12, 220);
+            this.FromMail.Location = new System.Drawing.Point(10, 237);
             this.FromMail.Name = "FromMail";
             this.FromMail.Size = new System.Drawing.Size(169, 20);
             this.FromMail.TabIndex = 5;
@@ -93,7 +94,7 @@
             // SendMsg
             // 
             this.SendMsg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SendMsg.Location = new System.Drawing.Point(10, 460);
+            this.SendMsg.Location = new System.Drawing.Point(10, 477);
             this.SendMsg.Name = "SendMsg";
             this.SendMsg.Size = new System.Drawing.Size(268, 30);
             this.SendMsg.TabIndex = 7;
@@ -116,7 +117,7 @@
             "E-mail.ru",
             "pochta.ru",
             "ukr.net"});
-            this.TypeOfMail.Location = new System.Drawing.Point(187, 220);
+            this.TypeOfMail.Location = new System.Drawing.Point(187, 237);
             this.TypeOfMail.Name = "TypeOfMail";
             this.TypeOfMail.Size = new System.Drawing.Size(91, 21);
             this.TypeOfMail.TabIndex = 8;
@@ -128,9 +129,17 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(12, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 196);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 213);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(7, 261);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Тема";
             // 
             // Massage
             // 
@@ -139,8 +148,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(291, 501);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(291, 525);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.TypeOfMail);
             this.Controls.Add(this.SendMsg);
             this.Controls.Add(this.pictureBox1);
@@ -175,5 +185,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button SendMsg;
         private System.Windows.Forms.ComboBox TypeOfMail;
+        private System.Windows.Forms.Label label4;
     }
 }

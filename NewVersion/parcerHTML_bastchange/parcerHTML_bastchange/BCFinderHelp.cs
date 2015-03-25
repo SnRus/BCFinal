@@ -16,5 +16,31 @@ namespace parcerHTML_bastchange
         {
             InitializeComponent();
         }
+
+        private void BCFinderHelp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Massage NMessage = new Massage();
+            NMessage.Show();
+        }
     }
 }
