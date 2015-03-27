@@ -42,6 +42,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.SettingsBtn = new System.Windows.Forms.Button();
+            this.HelpBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.WhatToBtn = new System.Windows.Forms.TextBox();
             this.WhatFromBtn = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,29 +74,22 @@
             this.timeLbValue = new System.Windows.Forms.Label();
             this.exchangeNum = new System.Windows.Forms.Label();
             this.exchangeValue = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.SettingsBtn = new System.Windows.Forms.Button();
-            this.HelpBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -230,6 +230,105 @@
             this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 35;
             this.label2.Text = "НА";
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Location = new System.Drawing.Point(241, 68);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(36, 29);
+            this.button4.TabIndex = 74;
+            this.button4.Tag = "";
+            this.toolTip1.SetToolTip(this.button4, "Статистика");
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.exchange;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Location = new System.Drawing.Point(279, 68);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(36, 29);
+            this.button3.TabIndex = 73;
+            this.button3.Tag = "";
+            this.toolTip1.SetToolTip(this.button3, "Популярность обменов");
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // SettingsBtn
+            // 
+            this.SettingsBtn.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.Settings__1_;
+            this.SettingsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SettingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SettingsBtn.Location = new System.Drawing.Point(318, 68);
+            this.SettingsBtn.Name = "SettingsBtn";
+            this.SettingsBtn.Size = new System.Drawing.Size(36, 29);
+            this.SettingsBtn.TabIndex = 42;
+            this.SettingsBtn.Tag = "";
+            this.toolTip1.SetToolTip(this.SettingsBtn, "Настройки");
+            this.SettingsBtn.UseVisualStyleBackColor = true;
+            this.SettingsBtn.Click += new System.EventHandler(this.SettingsBtn_Click);
+            // 
+            // HelpBtn
+            // 
+            this.HelpBtn.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.FAQ;
+            this.HelpBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HelpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.HelpBtn.Location = new System.Drawing.Point(357, 68);
+            this.HelpBtn.Name = "HelpBtn";
+            this.HelpBtn.Size = new System.Drawing.Size(36, 29);
+            this.HelpBtn.TabIndex = 37;
+            this.HelpBtn.Tag = "";
+            this.toolTip1.SetToolTip(this.HelpBtn, "Помощь");
+            this.HelpBtn.UseVisualStyleBackColor = true;
+            this.HelpBtn.Click += new System.EventHandler(this.HelpBtn_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.email;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(395, 68);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(39, 29);
+            this.button1.TabIndex = 36;
+            this.button1.Tag = "";
+            this.toolTip1.SetToolTip(this.button1, "Отправить письмо в службу поддрежки");
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button24.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.w512h5121347464996Search;
+            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button24.Location = new System.Drawing.Point(396, 103);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(38, 21);
+            this.button24.TabIndex = 33;
+            this.toolTip1.SetToolTip(this.button24, "Найти обменники по выбранным валютам");
+            this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pictureBox1.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.Black_and_white_on_transparent_background_279x75;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(422, 44);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "BCFinder - мы найдем лучшее для вас");
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // WhatToBtn
             // 
@@ -555,33 +654,6 @@
             this.exchangeValue.TabIndex = 72;
             this.exchangeValue.Text = "?/?";
             // 
-            // button4
-            // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(241, 68);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(36, 29);
-            this.button4.TabIndex = 74;
-            this.button4.Tag = "";
-            this.toolTip1.SetToolTip(this.button4, "Настройки");
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.exchange;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(279, 68);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(36, 29);
-            this.button3.TabIndex = 73;
-            this.button3.Tag = "";
-            this.toolTip1.SetToolTip(this.button3, "Настройки");
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.ForestGreen;
@@ -640,77 +712,6 @@
             this.pictureBox4.TabIndex = 43;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Visible = false;
-            // 
-            // SettingsBtn
-            // 
-            this.SettingsBtn.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.Settings__1_;
-            this.SettingsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SettingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SettingsBtn.Location = new System.Drawing.Point(318, 68);
-            this.SettingsBtn.Name = "SettingsBtn";
-            this.SettingsBtn.Size = new System.Drawing.Size(36, 29);
-            this.SettingsBtn.TabIndex = 42;
-            this.SettingsBtn.Tag = "";
-            this.toolTip1.SetToolTip(this.SettingsBtn, "Настройки");
-            this.SettingsBtn.UseVisualStyleBackColor = true;
-            this.SettingsBtn.Click += new System.EventHandler(this.SettingsBtn_Click);
-            // 
-            // HelpBtn
-            // 
-            this.HelpBtn.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.FAQ;
-            this.HelpBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.HelpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.HelpBtn.Location = new System.Drawing.Point(357, 68);
-            this.HelpBtn.Name = "HelpBtn";
-            this.HelpBtn.Size = new System.Drawing.Size(36, 29);
-            this.HelpBtn.TabIndex = 37;
-            this.HelpBtn.Tag = "";
-            this.toolTip1.SetToolTip(this.HelpBtn, "Помощь");
-            this.HelpBtn.UseVisualStyleBackColor = true;
-            this.HelpBtn.Click += new System.EventHandler(this.HelpBtn_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.email;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(395, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 29);
-            this.button1.TabIndex = 36;
-            this.button1.Tag = "";
-            this.toolTip1.SetToolTip(this.button1, "Отправить письмо в службу поддрежки");
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button24.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.w512h5121347464996Search;
-            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button24.Location = new System.Drawing.Point(396, 103);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(38, 21);
-            this.button24.TabIndex = 33;
-            this.toolTip1.SetToolTip(this.button24, "Найти обменники по выбранным валютам");
-            this.button24.UseVisualStyleBackColor = false;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox1.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.Black_and_white_on_transparent_background_279x75;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(422, 44);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "BCFinder - мы найдем лучшее для вас");
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
@@ -777,13 +778,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -976,6 +976,12 @@ namespace parcerHTML_bastchange
             NPopularity.Show();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Statistics NStatistics = new Statistics();
+            NStatistics.Show();
+        }
+
        
         
             
