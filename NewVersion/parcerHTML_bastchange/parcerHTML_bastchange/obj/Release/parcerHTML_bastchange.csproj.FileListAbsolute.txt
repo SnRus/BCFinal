@@ -106,3 +106,73 @@ C:\Users\Руслан\Desktop\BCFinder\Version 7\parcerHTML_bastchange\parcerHTM
 C:\Users\Руслан\Desktop\BCFinder\Version 7\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Massage.resources
 C:\Users\Руслан\Desktop\BCFinder\Version 7\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Properties.Resources.resources
 C:\Users\Руслан\Desktop\BCFinder\Version 7\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csproj.GenerateResource.Cache
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe.config
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.exe
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.pdb
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csprojResolveAssemblyReference.cache
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.BCFinderHelp.resources
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Form1.resources
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Massage.resources
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Properties.Resources.resources
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csproj.GenerateResource.Cache
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe
+C:\Users\Руслан\Desktop\BCFinder\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.pdb
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe.config
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.exe
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.pdb
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.pdb
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.BCFinderHelp.resources
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Form1.resources
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Massage.resources
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Properties.Resources.resources
+C:\Users\User\Desktop\Version 8\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe.config
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.exe
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.pdb
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.pdb
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.BCFinderHelp.resources
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Form1.resources
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Massage.resources
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Properties.Resources.resources
+C:\Users\User\Desktop\Version 8.2\Version 8\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csproj.GenerateResource.Cache
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe.config
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.exe
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.pdb
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.pdb
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csprojResolveAssemblyReference.cache
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.BCFinderHelp.resources
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Form1.resources
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Massage.resources
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Properties.Resources.resources
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csproj.GenerateResource.Cache
+C:\Users\Руслан\Desktop\BCFinder\Version10\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Popularity.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe.config
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.exe
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.pdb
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.pdb
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csprojResolveAssemblyReference.cache
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.BCFinderHelp.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Form1.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Massage.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Popularity.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Properties.Resources.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Statistics.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csproj.GenerateResource.Cache
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe.config
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.exe
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.pdb
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.exe
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\bin\Release\parcerHTML_bastchange.pdb
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csprojResolveAssemblyReference.cache
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.BCFinderHelp.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Form1.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Massage.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Popularity.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.Properties.Resources.resources
+C:\Users\Руслан\Desktop\BCFinder\Version11_1\parcerHTML_bastchange\parcerHTML_bastchange\obj\Release\parcerHTML_bastchange.csproj.GenerateResource.Cache

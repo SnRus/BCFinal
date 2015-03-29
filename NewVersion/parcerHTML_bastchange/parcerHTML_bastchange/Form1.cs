@@ -43,7 +43,7 @@ namespace parcerHTML_bastchange
 
       private void Form1_Load(object sender, EventArgs e)
         {
-            
+           
             cwmz.Checked = Properties.Settings.Default.cwmz ;
             cyandex.Checked = Properties.Settings.Default.cyandex  ;
             cwmr.Checked = Properties.Settings.Default.cwmr  ;
@@ -208,7 +208,7 @@ namespace parcerHTML_bastchange
 
                       }
                   }
-                  catch { MessageBox.Show("Пожалуйста, добавте хоть одну валюту!"); }
+                  catch { MessageBox.Show("Пожалуйста, выберите валюты для обмена"); }
               }
           }
         }
@@ -299,8 +299,10 @@ namespace parcerHTML_bastchange
 
         private void button24_Click(object sender, EventArgs e)
         {
+
             try
             {
+                
                 WhatToBtn.Text = null;
                 WhatFromBtn.Text = null;
                 {
@@ -335,8 +337,24 @@ namespace parcerHTML_bastchange
        + "<td class=\"bi\">(.*?)<small>(.*?)</small></td>\n"
        + "<td class=\"ar arp\" (.*?)>(.*?)</td>\n"
        + "<td class=\"rw\" (.*?)<a href=\"(.*?)\" class=";
+                    string timepattern = "id=\"updatetime\">(.*)</dd>";
+                    string time = null;
+                     foreach (Match match in Regex.Matches(page, timepattern))
+                    {
 
+                        time = match.Groups[1].Value;
+                        timeLbValue.Text = time;
+                        time = null;
+                    }
+                     string exchangepattern = "<dd title=\"обменников/обменных сайтов\">(.*?)</dd>";
+                     string exchange = null;
+                     foreach (Match match in Regex.Matches(page, exchangepattern))
+                     {
 
+                         exchange = match.Groups[1].Value;
+                         exchangeValue.Text = exchange;
+                         exchange = null;
+                     }
                     string row = null;
                     string[] rvalue = null;
                     foreach (Match match in Regex.Matches(page, srcData))
@@ -364,6 +382,8 @@ namespace parcerHTML_bastchange
                     }
 
 
+                  
+                   
                     try { string s = dataGridView1.Rows[0].Cells[0].Value.ToString(); }
 
                     catch
@@ -374,7 +394,7 @@ namespace parcerHTML_bastchange
 
                 }
             }
-            catch { MessageBox.Show("Пожалуйста, добавте хоть одну валюту!"); }
+            catch { MessageBox.Show("Пожалуйста, выберите валюты для обмена"); }
         }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -427,10 +447,27 @@ namespace parcerHTML_bastchange
                 ds.Tables.Add("my");
                 dataGridView1.Columns.Clear();
 
+                string timepattern = "id=\"updatetime\">(.*)</dd>";
+                string time = null;
+                foreach (Match match in Regex.Matches(page, timepattern))
+                {
+
+                    time = match.Groups[1].Value;
+                    timeLbValue.Text = time;
+                    time = null;
+                }
+                string exchangepattern = "<dd title=\"обменников/обменных сайтов\">(.*?)</dd>";
+                string exchange = null;
+                foreach (Match match in Regex.Matches(page, exchangepattern))
+                {
+
+                    exchange = match.Groups[1].Value;
+                    exchangeValue.Text = exchange;
+                    exchange = null;
+                }
 
 
-
-                string[] col = { "Обменник", "Отдаете", "Отдаете.", "Получаете", "Резерв", "Web" };
+                string[] col = { "Обменник", "Отдаете", "Отдаете ", "Получаете", "Резерв", "Web" };
 
 
                 foreach (string nameCol in col)
@@ -471,7 +508,11 @@ namespace parcerHTML_bastchange
                         ds.Tables[0].Rows.Add(rvalue);
 
                         dataGridView1.DataSource = ds.Tables[0];
-
+                        for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
+                        {
+                            if (Decimal.Parse(WhatToBtn.Text)  > Decimal.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()))
+                            { this.dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red; }
+                        }
                         row = null;
                         rvalue = null;
                         dataGridView1.Columns[1].Visible = false;
@@ -496,7 +537,7 @@ namespace parcerHTML_bastchange
             }
             catch
             {
-                MessageBox.Show("Пожалуйста, добавте хоть одну валюту!");
+                MessageBox.Show("Пожалуйста, выберите валюты для обмена");
             }
       }
 
@@ -529,7 +570,7 @@ namespace parcerHTML_bastchange
 
 
 
-                    string[] col = { "Обменник", "Отдаете", "Отдаете.", "Получаете", "Резерв", "Web" };
+                    string[] col = { "Обменник", "Отдаете", "Отдаете ", "Получаете", "Резерв", "Web" };
 
 
                     foreach (string nameCol in col)
@@ -538,7 +579,24 @@ namespace parcerHTML_bastchange
                         ds.Tables[0].Columns.Add(nameCol);
 
                     }
+                    string timepattern = "id=\"updatetime\">(.*)</dd>";
+                    string time = null;
+                    foreach (Match match in Regex.Matches(page, timepattern))
+                    {
 
+                        time = match.Groups[1].Value;
+                        timeLbValue.Text = time;
+                        time = null;
+                    }
+                    string exchangepattern = "<dd title=\"обменников/обменных сайтов\">(.*?)</dd>";
+                    string exchange = null;
+                    foreach (Match match in Regex.Matches(page, exchangepattern))
+                    {
+
+                        exchange = match.Groups[1].Value;
+                        exchangeValue.Text = exchange;
+                        exchange = null;
+                    }
 
 
                     string srcData = "<td class=\"bj\"><div class=\"pa\"><a rel=\"nofollow\" target=\"_blank\" href=\"(.*?)\" (.*?)"
@@ -571,11 +629,16 @@ namespace parcerHTML_bastchange
                             ds.Tables[0].Rows.Add(rvalue);
 
                             dataGridView1.DataSource = ds.Tables[0];
-
+                            for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
+                            {
+                                if (Math.Round(((Decimal.Parse(match.Groups[6].Value.Replace('.', ',')) / (Decimal.Parse(match.Groups[4].Value.Replace('.', ','))) * Decimal.Parse(WhatFromBtn.Text))), 2) >= Decimal.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()))
+                                { this.dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red; }
+                            }
                             row = null;
                             rvalue = null;
                             dataGridView1.Columns[1].Visible = false;
                             dataGridView1.Columns[5].Visible = false;
+                           
                         }
 
 
@@ -593,15 +656,17 @@ namespace parcerHTML_bastchange
 
                         }
 
+                        
                     }
 
 
 
                 }
+
             }
             catch
             {
-                MessageBox.Show("Пожалуйста, добавте хоть одну валюту!");
+                MessageBox.Show("Пожалуйста, выберите валюты для обмена");
             }
 
         }
@@ -904,6 +969,19 @@ namespace parcerHTML_bastchange
             if (exchange.Checked == true) { call.Enabled = false; }
             else { call.Enabled = true; }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Popularity NPopularity = new Popularity();
+            NPopularity.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
 
        
         
