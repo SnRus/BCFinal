@@ -973,12 +973,19 @@ namespace parcerHTML_bastchange
         private void button3_Click(object sender, EventArgs e)
         {
             Popularity NPopularity = new Popularity();
+            
             NPopularity.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            DoubleChange NDoubleChange = new DoubleChange();
+            NDoubleChange.Show();
         }
 
        

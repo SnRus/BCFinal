@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>PaperMoney.ico</ApplicationIcon>
+    <ApplicationIcon>1423364080_17009.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -53,11 +53,23 @@
     <Compile Include="BCFinderHelp.Designer.cs">
       <DependentUpon>BCFinderHelp.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoubleChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoubleChange.Designer.cs">
+      <DependentUpon>DoubleChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoDoubleChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoDoubleChange.Designer.cs">
+      <DependentUpon>InfoDoubleChange.cs</DependentUpon>
     </Compile>
     <Compile Include="Massage.cs">
       <SubType>Form</SubType>
@@ -76,8 +88,14 @@
     <EmbeddedResource Include="BCFinderHelp.resx">
       <DependentUpon>BCFinderHelp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DoubleChange.resx">
+      <DependentUpon>DoubleChange.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoDoubleChange.resx">
+      <DependentUpon>InfoDoubleChange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Massage.resx">
       <DependentUpon>Massage.cs</DependentUpon>
@@ -130,6 +148,7 @@
     <None Include="Resources\Technical-Support.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1423364080_17009.ico" />
     <Content Include="favicon.ico" />
     <Content Include="PaperMoney.ico" />
     <None Include="Resources\FAQ.png" />
@@ -151,6 +170,9 @@
     <None Include="Resources\35512125.png" />
     <None Include="Resources\exchange1.png" />
     <None Include="Resources\355121251.png" />
+    <None Include="Resources\2888484.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\1423378482_social_google_box.png" />
     <Content Include="web V2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

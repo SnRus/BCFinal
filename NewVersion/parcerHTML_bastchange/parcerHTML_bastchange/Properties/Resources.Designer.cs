@@ -73,6 +73,26 @@ namespace parcerHTML_bastchange.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1423378482_social_google_box {
+            get {
+                object obj = ResourceManager.GetObject("1423378482_social_google_box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2888484 {
+            get {
+                object obj = ResourceManager.GetObject("2888484", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _35512125 {
             get {
                 object obj = ResourceManager.GetObject("35512125", resourceCulture);
@@ -156,6 +176,16 @@ namespace parcerHTML_bastchange.Properties {
         internal static System.Drawing.Bitmap FAQ {
             get {
                 object obj = ResourceManager.GetObject("FAQ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info {
+            get {
+                object obj = ResourceManager.GetObject("info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

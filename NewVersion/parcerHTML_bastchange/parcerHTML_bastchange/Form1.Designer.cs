@@ -48,6 +48,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.WhatToBtn = new System.Windows.Forms.TextBox();
             this.WhatFromBtn = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -153,7 +155,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(12, 68);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(261, 29);
+            this.button2.Size = new System.Drawing.Size(201, 29);
             this.button2.TabIndex = 30;
             this.button2.Text = "Показать все обменники";
             this.button2.UseVisualStyleBackColor = false;
@@ -204,7 +206,7 @@
             "qiwi",
             "privat24-uah",
             "yandex-money"});
-            this.comboBox2.Location = new System.Drawing.Point(314, 103);
+            this.comboBox2.Location = new System.Drawing.Point(320, 103);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(75, 21);
             this.comboBox2.TabIndex = 32;
@@ -235,7 +237,7 @@
             this.button3.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.exchange;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(279, 68);
+            this.button3.Location = new System.Drawing.Point(251, 68);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(36, 29);
             this.button3.TabIndex = 73;
@@ -249,7 +251,7 @@
             this.SettingsBtn.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.Settings__1_;
             this.SettingsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SettingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SettingsBtn.Location = new System.Drawing.Point(318, 68);
+            this.SettingsBtn.Location = new System.Drawing.Point(288, 68);
             this.SettingsBtn.Name = "SettingsBtn";
             this.SettingsBtn.Size = new System.Drawing.Size(36, 29);
             this.SettingsBtn.TabIndex = 42;
@@ -263,7 +265,7 @@
             this.HelpBtn.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.FAQ;
             this.HelpBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.HelpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.HelpBtn.Location = new System.Drawing.Point(357, 68);
+            this.HelpBtn.Location = new System.Drawing.Point(362, 68);
             this.HelpBtn.Name = "HelpBtn";
             this.HelpBtn.Size = new System.Drawing.Size(36, 29);
             this.HelpBtn.TabIndex = 37;
@@ -277,9 +279,9 @@
             this.button1.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources.email;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(395, 68);
+            this.button1.Location = new System.Drawing.Point(399, 68);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 29);
+            this.button1.Size = new System.Drawing.Size(36, 29);
             this.button1.TabIndex = 36;
             this.button1.Tag = "";
             this.toolTip1.SetToolTip(this.button1, "Отправить письмо в службу поддрежки");
@@ -293,9 +295,9 @@
             this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button24.Location = new System.Drawing.Point(396, 103);
+            this.button24.Location = new System.Drawing.Point(399, 103);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(38, 21);
+            this.button24.Size = new System.Drawing.Size(35, 21);
             this.button24.TabIndex = 33;
             this.toolTip1.SetToolTip(this.button24, "Найти обменники по выбранным валютам");
             this.button24.UseVisualStyleBackColor = false;
@@ -315,11 +317,38 @@
             this.toolTip1.SetToolTip(this.pictureBox1, "BCFinder - мы найдем лучшее для вас");
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources._2888484;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Location = new System.Drawing.Point(214, 68);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(36, 29);
+            this.button4.TabIndex = 74;
+            this.button4.Tag = "";
+            this.toolTip1.SetToolTip(this.button4, "Популярность обменов");
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::parcerHTML_bastchange.Properties.Resources._1423378482_social_google_box;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Location = new System.Drawing.Point(325, 68);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(36, 29);
+            this.button5.TabIndex = 75;
+            this.button5.Tag = "";
+            this.toolTip1.SetToolTip(this.button5, "Популярность обменов");
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // WhatToBtn
             // 
             this.WhatToBtn.Location = new System.Drawing.Point(233, 103);
             this.WhatToBtn.Name = "WhatToBtn";
-            this.WhatToBtn.Size = new System.Drawing.Size(75, 21);
+            this.WhatToBtn.Size = new System.Drawing.Size(81, 21);
             this.WhatToBtn.TabIndex = 38;
             this.WhatToBtn.Click += new System.EventHandler(this.WhatToBtn_Click);
             this.WhatToBtn.TextChanged += new System.EventHandler(this.WhatToBtn_TextChanged);
@@ -707,6 +736,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(592, 641);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.exchangeValue);
             this.Controls.Add(this.exchangeNum);
@@ -824,6 +855,8 @@
         private System.Windows.Forms.Label exchangeNum;
         private System.Windows.Forms.Label exchangeValue;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
