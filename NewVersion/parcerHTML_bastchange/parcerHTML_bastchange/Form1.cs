@@ -76,6 +76,7 @@ namespace parcerHTML_bastchange
                     ds.Tables[0].Columns.Add(nameCol);
 
                 }
+                
 
 
 
@@ -114,7 +115,9 @@ namespace parcerHTML_bastchange
 
 
                     dataGridView1.Columns[4].Visible = false;
+
                 }
+
                 string s = " &ndash;&nbsp; ";
                 for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
                 {
@@ -969,6 +972,32 @@ namespace parcerHTML_bastchange
             if (exchange.Checked == true) { call.Enabled = false; }
             else { call.Enabled = true; }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Popularity NPopularity = new Popularity();
+            
+            NPopularity.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            DoubleChange NDoubleChange = new DoubleChange();
+            NDoubleChange.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            GoogleSearch NGoogleSearch = new GoogleSearch();
+            NGoogleSearch.Show();
+        }
+
+       
 
        
         
