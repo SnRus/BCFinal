@@ -154,7 +154,7 @@ namespace parcerHTML_bastchange
 
 
 
-                          string[] col = { "Обменник", "Отдаете", "Получаете", "Резерв", "Web" };
+                          string[] col = { "Обменник", "Отдаете", "Получаете", "Резерв", "ppWeb" };
 
 
                           foreach (string nameCol in col)
@@ -228,7 +228,7 @@ namespace parcerHTML_bastchange
             DataSet ds = new DataSet();
             ds.Tables.Add("my");
 
-            string[] col = { "Обменник", "Резервы", "Курсов", "Статус","Web" };
+            string[] col = { "Обменник", "Статус", "Резерв", "Курсов", "Web" };
 
 
             foreach (string nameCol in col)
@@ -241,10 +241,9 @@ namespace parcerHTML_bastchange
 
             string srcData = "<td class=\"bj\"><div class=\"pa\"><a rel=\"nofollow\" target=\"_blank\" href=\"(.*?)\" (.*?)"
                          + "<div class=\"ca\">(.*?)</div></div></div></td>"
+                         + "<td class=\"bj bp\">(.*?)</td>\n"
                          + "<td class=\"ar arp\">(.*?)</small></td>\n"
-                        + "<td class=\"ar arp\">(.*?)</small></td>\n"
-                        + "<td class=\"bj bp\">(.*?)</td>\n"
-                     ;
+                         + "<td class=\"ar arp\">(.*?)</small></td>";
 
 
             string row = null;
@@ -253,10 +252,13 @@ namespace parcerHTML_bastchange
             {
 
                 row = match.Groups[3].Value + " | "
-                                      + match.Groups[4].Value + " | "
-                                      + match.Groups[5].Value + " | "
-                                      + match.Groups[6].Value + " | "
-                                     + match.Groups[1].Value  ;
+                  +  match.Groups[4].Value + " | "
+                  + match.Groups[5].Value + " | "
+                   + match.Groups[6].Value + " | "
+                 + match.Groups[1].Value;                      
+                                      
+                                      
+                                    
                
 
 
@@ -275,14 +277,14 @@ namespace parcerHTML_bastchange
                     
                 dataGridView1.Columns[4].Visible = false;
             }
-            string s = " &ndash;&nbsp; ";
+            string s = "&mdash;";
             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
             {
                 
                 for (int j = 0; j < dataGridView1.Columns.Count; j++)
                 {
 
-                    if (s == dataGridView1[j, i].Value.ToString())
+                    if ((dataGridView1[j, i].Value.ToString().Contains(s)))
                     {
                         dataGridView1[j, i].Value = "Недоступно"; 
                  
