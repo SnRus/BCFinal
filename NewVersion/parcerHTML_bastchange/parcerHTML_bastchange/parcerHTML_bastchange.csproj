@@ -84,6 +84,12 @@
   <ItemGroup>
     <None Include="Resources\Black_and_white_on_transparent_background_188x75.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w512h5121347464996Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1347542921_l-2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
