@@ -63,6 +63,16 @@ namespace parcerHTML_bastchange.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1347542921_l_2 {
+            get {
+                object obj = ResourceManager.GetObject("1347542921_l-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Black_and_white_on_transparent_background_188x75 {
             get {
                 object obj = ResourceManager.GetObject("Black_and_white_on_transparent_background_188x75", resourceCulture);
@@ -76,6 +86,16 @@ namespace parcerHTML_bastchange.Properties {
         internal static System.Drawing.Bitmap Original_transparent_175x75 {
             get {
                 object obj = ResourceManager.GetObject("Original_transparent_175x75", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap w512h5121347464996Search {
+            get {
+                object obj = ResourceManager.GetObject("w512h5121347464996Search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
