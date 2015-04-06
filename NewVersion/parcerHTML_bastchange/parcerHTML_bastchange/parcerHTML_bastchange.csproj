@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PaperMoney.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,16 +47,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BCFinderHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCFinderHelp.Designer.cs">
+      <DependentUpon>BCFinderHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Massage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Massage.Designer.cs">
+      <DependentUpon>Massage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BCFinderHelp.resx">
+      <DependentUpon>BCFinderHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Massage.resx">
+      <DependentUpon>Massage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,6 +110,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1347542921_l-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Technical-Support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="PaperMoney.ico" />
+    <None Include="Resources\FAQ.png" />
+    <None Include="Resources\Снимок.JPG" />
+    <None Include="Resources\Сниcмок.JPG" />
+    <None Include="Resources\Show.JPG" />
+    <None Include="Resources\Exch.JPG" />
+    <None Include="Resources\ShowBtn.JPG" />
+    <None Include="Resources\Message.JPG" />
+    <None Include="Resources\Original_without_effects_on_transparent_background_279x75.png" />
+    <None Include="Resources\Снимок1.JPG" />
+    <None Include="Resources\support-loading.gif" />
+    <None Include="Resources\support-loading1.gif" />
+    <None Include="Resources\Settings %281%29.png" />
+    <None Include="Resources\settings %282%29.png" />
+    <Content Include="web V2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
